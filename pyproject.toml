@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlops-cicd-pipeline"
+version = "1.0.0"
+description = "Reproducible MLflow experiment tracking and model registration demo."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mlflow>=2.9,<4",
+    "numpy>=1.23",
+    "scikit-learn>=1.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

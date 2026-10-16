@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Local experiment tracking and generated artifacts
+mlruns/
+mlartifacts/
+*.db
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
